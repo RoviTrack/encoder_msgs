@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(rovimapper_msgs)
+project(encoder_msgs)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -55,7 +55,8 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate services in the 'srv' folder
 add_service_files(
   FILES
-  SetEncoderLimits.srv
+  EncoderLimits.srv
+  EncoderTrigger.srv
 )
 
 ## Generate actions in the 'action' folder
